@@ -13,6 +13,7 @@ function Routeur(){
     <Router>
       <Routes >
         <Route path="/" element={<Home/>} />
+        <Route path="/portfolio" element={<Home/>}/>
         <Route path="/contact" element={<Contact/>} />
         <Route path="/about" element={<About/>}/>
         <Route path='/card/:id' element={<CardDetails/>} />
