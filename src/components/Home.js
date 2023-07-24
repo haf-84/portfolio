@@ -12,7 +12,7 @@ function Home() {
             <Banner />
             <div className='banner-container'>
             <Image imageUrl={image1}/>
-            <h1 className='home-h1'>Chez vous, partout et ailleurs</h1>
+            <h1 className='home-h1'>Bienvenue sur le site portfolio de Hafida S. !</h1>
             </div>
             <div className='kasa-gallery-container'>
               <CardGallery/>

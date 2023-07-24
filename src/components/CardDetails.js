@@ -38,21 +38,6 @@ function CardDetails(){
             <div className="card-details-container">
                 <div className="card-details-title-location">
                     <h1 className="card-details-title-location-h1">{card.title}</h1>
-                    <p className="card-details-location">{card.location}</p>
-                </div>
-                <div className="card-details-host-info">
-                    <p className="card-details-host-info-name">{card.host.name}</p>
-                    <img className="card-details-img-host"src={card.host.picture} alt="hôte logement kasa"/>
-                </div>
-            </div>
-            <div className="card-details-notation-tags">
-                <ul className="card-details-tags">
-                    {card.tags.map((tag,index)=>(
-                        <li className="card-details-liste-tags" key={index}>{tag}</li>
-                    ))}
-                </ul>
-                <div className="card-details-stars">
-                    {generateStars()}
                 </div>
             </div>
             <div className="card-details-description-equipements">
@@ -60,12 +45,15 @@ function CardDetails(){
                     {card.description}
                 </Collapse>
                 
-                <Collapse title="Équipements" className="card-details-description">
+                <Collapse title="Technologies et outils utilisés" className="card-details-description">
                     <ul className="content-mobile"> 
                     {card.equipments.map((equipment,index) => (
                         <li key={index}> {equipment}</li>
                     ))}
                     </ul>
+                </Collapse>
+                <Collapse title='Lien vers le projet'>
+                    {card.lien}
                 </Collapse>
             </div>
             </main>

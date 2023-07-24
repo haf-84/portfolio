@@ -8,6 +8,7 @@ function Banner(){
             <img src={logo} alt="kasa" className='kasa-logo'></img>
                 <ul className='kasa-banner-ul'>
                     <li className='kasa-banner-li'> <Link to="/" className='kasa-banner-a'>Accueil</Link></li>
+                    <li className='kasa-banner-li'><Link to="/Contact" className='kasa-banner-a'>Contact</Link></li>
                     <li className='kasa-banner-li'><Link to="/About" className='kasa-banner-a'>A propos</Link></li>
                 </ul>
         </div>
